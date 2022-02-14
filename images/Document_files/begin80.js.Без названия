@@ -1,0 +1,26 @@
+// const cycleOfAB = (a, b) => {
+//     let cycle = ''
+//     for (let i = a; i <= b; i++) {
+//         cycle = cycle + ' ' + i
+//     }
+//     const cycleArray = cycle.split(' ')
+//     cycleArray.shift()
+//     const N = cycleArray.length
+//     return { cycle: cycle, N: N }
+// }
+
+// console.log(cycleOfAB(-4, 13))
+
+const cycleOfAB = (a, b) => {
+    let cycle = []
+    for (let i = a; i <= b; i++) {
+        cycle[i] = i
+        lengthCycle = cycle.length
+    }
+    return { length: lengthCycle, value: cycle }
+}
+
+// var flowers = ["Rose", "Lily", "Tulip", "Jasmine", "Orchid"];
+// for (var i = 0; i < flowers.length; i++) {
+//     console.log(flowers[i] + " - это цветок.");
+// }
